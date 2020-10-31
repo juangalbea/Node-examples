@@ -1,0 +1,24 @@
+
+The notes.txt file should include:
+
+Brief instructions on how to run your code
+Inside the folder type: npm i
+To run the code write: node index.js "here your path to the input text file"
+example: node index.js /home/juan/code/test/littledata-challenge/littledata-challenge/input/hash-1.txt
+
+Any notes we should bear in mind (e.g. why you made an unusual choice)
+I create an object to update the results in the iteration. I think is a good choice but there are many more.
+
+A brief note on what you found hardest about the challenge
+the brute force iterator, sometimes you have to figure out what is going on doing so many iterations.
+
+A brief note on how you could improve your code further
+I could do even more dynamic, to create different algorithms or different output length etc.
+
+Any feedback to us on how to improve either the challenge itself or the
+recruitment process so far
+
+The problem was great, maybe the explanation of the example could be a bit more clear.
+
+
+
