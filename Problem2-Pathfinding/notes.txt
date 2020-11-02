@@ -1,0 +1,24 @@
+
+The notes.txt file should include:
+
+Brief instructions on how to run your code
+Inside the folder type: npm i
+To run the code write: node index.js "here your absolute path to the input text file"
+example: node index.js /home/juan/code/test/littledata-challenge/littledata-challenge/input/hash-1.txt
+
+Any notes we should bear in mind (e.g. why you made an unusual choice)
+I make many changes in the input to have an array with small arrays with x, y but removing everything around using regex. I use matrix(double arrays) pretty standard for this case and
+
+A brief note on what you found hardest about the challenge
+to make the pathfinder library work, but it wasn't very difficult once you have the correct data.
+
+A brief note on how you could improve your code further
+Making less changes in the arrays, find a way to do it with less operations
+
+Any feedback to us on how to improve either the challenge itself or the
+recruitment process so far
+
+Was very good exercise, but it would be interesting to design a pathfinder algorithm even if is not perfect, at least to try. Of course this is more complex and not everybody will be able to do it
+
+
+
