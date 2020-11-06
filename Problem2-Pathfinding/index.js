@@ -18,8 +18,8 @@ try {
 function pathfinder(a) {
   let size = [0, 0];
   let values = [];
-  a = a.replace(/x/g, "").replace(/\n/g, "").split(",") // remove x and line break from the file
-  a.map(e => {
+  let paco = a.replace(/x/g, "").replace(/\n/g, "").split(",") // remove x and line break from the file
+  paco.forEach(e => {
     e = e.split("y") // remove also y to have a more simple format I can work with
     values.push(e);
     if (e[0] > size[0]) {
@@ -41,20 +41,20 @@ function pathfinder(a) {
   grid.setWalkableAt(0, 1, false);
   var finder = new PF.AStarFinder();
   var path = finder.findPath(values[0][0], values[0][1], values[values.length-1][0], values[values.length-1][1], grid);
-  path.map(e => {
+  path.forEach(e => {
     matrix[e[1]][e[0]] = 'O';
   })
 
   //  Change matrix values by 0s and 1s
-  for (let i = 0; i < matrix.length; i++) {
-    for (let j = 0; j < matrix[i].length; j++) {
-      if (matrix[i][j] === 0) {
-        matrix[i][j] = '.';
-      } else if (matrix[i][j] === 1) {
-        matrix[i][j] = 'X';
+  matrix.forEach(file => {
+    file.forEach((e, i) => {
+      if (file[i] === 0) {
+        file[i] = '.';
+      } else if (file[i] === 1) {
+        file[i] = 'X';
       }
-    }
-  }
+    })
+  })
 
   // add to the matrix, the Starting point S and Ending E
   matrix[values[0][1]][values[0][0]] = 'S';
